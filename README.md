@@ -66,4 +66,4 @@ Creamos nuestro fragmento Login, nuestros campos TextInputLayout añadir las pro
     </LinearLayout>
 ````
 
-![](https://github.com/caamaledgar/documentationProjects/blob/main/Login/Login.png)
+![](https://github.com/caamaledgar/documentationProjects/blob/main/Login/Login.PNG)
