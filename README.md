@@ -15,6 +15,33 @@ Al archivo buiild.gradle.app
     }
 ````
 
+En nuestro fragmento declarar el objeto Bindig y actualizamos los métodos onCreateView y onDestroyView
+````
+public class LoginFragment extends Fragment {
+    FragmentLoginBinding binding;
+    
+    ...
+    
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        // return inflater.inflate(R.layout.fragment_login, container, false);
+        binding = FragmentLoginBinding.inflate(inflater, container, false);
+        View view = binding.getRoot();
+        return view;
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        binding = null;
+    }    
+    
+    
+````
+
+
 Conectamos nuestra aplicación a FireBase
 
 ![](https://github.com/caamaledgar/documentationProjects/blob/main/Login/Firebase%20Auth%20Provider.PNG)
@@ -83,6 +110,22 @@ Creamos nuestro fragmento Login, nuestros campos TextInputLayout añadir las pro
             android:layout_weight="1"
             android:text="Registrar" />
     </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+        <Button
+            android:id="@+id/btnLoginGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:drawableLeft="@drawable/googleg_standard_color_18"
+            android:text="Ingresar con Google" />
+    </LinearLayout>
+    
 ````
 
 ![](https://github.com/caamaledgar/documentationProjects/blob/main/Login/Login.PNG)
