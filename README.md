@@ -1,6 +1,25 @@
 # myLogin
 
 
+Preparamos nuestro proyecto
+
+Al archivo AndroidManifest.xml
+````
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+````
+
+Al archivo buiild.gradle.app
+````
+    viewBinding {
+        enabled = true
+    }
+````
+
+Conectamos nuestra aplicación a FireBase
+
+![](https://github.com/caamaledgar/documentationProjects/blob/main/Login/Firebase Auth Provider.PNG)
+
+![](https://github.com/caamaledgar/documentationProjects/blob/main/Login/Firebase Auth Connect.PNG)
 
 
 Creamos nuestro fragmento Login, nuestros campos TextInputLayout añadir las propiedades de tipo email y password
@@ -67,3 +86,7 @@ Creamos nuestro fragmento Login, nuestros campos TextInputLayout añadir las pro
 ````
 
 ![](https://github.com/caamaledgar/documentationProjects/blob/main/Login/Login.PNG)
+
+
+
+
