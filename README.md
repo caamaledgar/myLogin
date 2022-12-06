@@ -17,9 +17,9 @@ Al archivo buiild.gradle.app
 
 Conectamos nuestra aplicación a FireBase
 
-![](https://github.com/caamaledgar/documentationProjects/blob/main/Login/Firebase Auth Provider.PNG)
+![](https://github.com/caamaledgar/documentationProjects/blob/main/Login/Firebase%20Auth%20Provider.PNG)
 
-![](https://github.com/caamaledgar/documentationProjects/blob/main/Login/Firebase Auth Connect.PNG)
+![](https://github.com/caamaledgar/documentationProjects/blob/main/Login/Firebase%20Auth%20Connect.PNG)
 
 
 Creamos nuestro fragmento Login, nuestros campos TextInputLayout añadir las propiedades de tipo email y password
